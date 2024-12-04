@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Program11 {
 	
 	//Program 10 by Asta Walor-Scott. Reads dracula, takes out special characters,  
-		public static void main(String[] args) { //takes out spaces, and splits it at each word. Addig to both an AVL tree, and a LinkedList
+		public static void main(String[] args) { //takes out spaces, and splits it at each word. Adding to both to a seperate hashes
 			ArrayList<String>dracula = new ArrayList<String>();
 			ArrayList<String>temp = new ArrayList<String>();
 			ArrayList<String> info = new ArrayList<String>();
@@ -13,7 +13,7 @@ public class Program11 {
 			linkList list = new linkList();
 
 			try {
-				BufferedReader br = new BufferedReader(new FileReader("src\\dracula.txt"));
+				BufferedReader br = new BufferedReader(new FileReader("dracula.txt"));
 				String readLine;
 
 				while ((readLine = br.readLine()) !=null) {

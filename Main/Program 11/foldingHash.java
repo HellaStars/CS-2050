@@ -20,7 +20,7 @@ public class foldingHash { //folding method for hasing by Asta Walor-Scott
 		char[] temp = key.toCharArray();
 		int number = temp.length;
 		
-		while (number > ) {
+		while (number > 1) {
 			
 		}
 		

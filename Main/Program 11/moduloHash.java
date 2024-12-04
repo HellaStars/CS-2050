@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class moduloHash { // modulo hash algorythm by Asta Walor-Scott
+public class moduloHash { // modulo hash algorithm by Asta Walor-Scott
 
 	public static class key {
 		private String key;
@@ -51,10 +51,12 @@ public class moduloHash { // modulo hash algorythm by Asta Walor-Scott
 		if (num >= 9481) {
 			num = 0;
 		}
+		if (modulo[num] != null) {
+			clash++;
+		}
 		while (modulo[num] != null){ //handles collisions 
 			//System.out.println(modulo.length);//debug
 			num++;
-			clash++;
 			if (num >= 9481) {
 				num = 0;
 			}
@@ -82,10 +84,10 @@ public class moduloHash { // modulo hash algorythm by Asta Walor-Scott
 		for (int i = 0; i < modulo.length; i++) {
 			if (modulo[i] != null) {
 				load += 1;
-				System.out.println(load);
+				//System.out.println(load);
 				}
 		}
-		return load = 9491 / load;
+		return load = load / 9491;
 	}
 
 }
